@@ -24,7 +24,7 @@ def select():
 
 
 # настройки окна
-position = {"padx": 1, "pady": 1, "anchor":NW}
+position = {"padx": 1, "pady": 1, "anchor": NW}
  
 subjects = StringVar()
 subjects_label = ttk.Label(textvariable=subjects)

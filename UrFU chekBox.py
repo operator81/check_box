@@ -30,6 +30,7 @@ def select():
     if ML_base.get() == 1: result = f"{result} Математические основы машинного обучения, "
     if practicum.get() == 1: result = f"{result} Цифровые компетенции в научной деятельности, "
     subjects.set(result)
+    
 # настройки окна
 position = {"padx":1, "pady":1, "anchor":NW}
  

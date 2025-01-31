@@ -84,6 +84,10 @@ def save_selection():
     with open("course_selection.txt", "w") as f:
         f.write(subjects.get())
     print("Выбор сохранен!")
+ 
+# Кнопка для сохранения
+save_button = ttk.Button(text="Сохранить", command=save_selection)
+save_button.pack(**position)
 
 # запуск программы
 root.mainloop()

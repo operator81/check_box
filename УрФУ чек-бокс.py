@@ -79,5 +79,11 @@ practicum_checkbutton.pack(**position)
 combobox = ttk.Combobox(values=variants)
 combobox.pack(anchor=NW, padx=6, pady=6)
 
+# Функция для сохранения выбранных данных в файл (улучшение №1)
+def save_selection():
+    with open("course_selection.txt", "w") as f:
+        f.write(subjects.get())
+    print("Выбор сохранен!")
+
 # запуск программы
 root.mainloop()
